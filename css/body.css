@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+body{
+  font:400 14px/1.8 'Montserrat', sans-serif;  
+  font-color:#545454;
+  background:#ffffff;
+}
+
+
+/* Headings */
+
+h1{
+  font-size: 35px;
+  font-color:#545454;
+}
+
+h3{
+  font-size: 22px;
+  font-color:#545454;
+  text-transform: uppercase;
+}
+
+h4{
+  font-size: 10px;
+  opacity: 0.5;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-style: normal;
+  font-color:#545454;
+}
+
+p{
+opacity: 0.4;
+}
+
+
+
+/* Global */
+
+.container{
+  width:95%;
+  margin:auto;
+  margin-top:20px;
+  overflow:hidden;
+}
+
+.card{
+  margin:5px;
+  margin-bottom: 100px;
+  padding-top:10px;
+}
+
+
+.sidebar{
+	list-style-type: none;
+	color:#ffffff;
+	width:16%;
+	padding-top:80px;
+	height:650px;
+	float:left;
+	overflow:hidden;
+    position: fixed;
+    border-radius: 40px;
+    background:#007ced;
+
+}
+.content{
+	width: 75%;
+    height: 4500px;
+    overflow:hidden;
+    float: right;
+	line-height:1em;
+	margin:10px;
+}
+
+
+
+
+/* Navigation */
+
+.menu a{ 
+	color: #84c0f6;
+	font-family: Montserrat, Sans-Serif;
+	text-size: 16px;
+	display: block;
+    padding: 1px ;
+    cursor: pointer;
+    text-decoration:none; 
+ }
+    
+.menu a:hover {
+    color: #ffffff;
+}
+ li {
+ 	list-style: none;
+}
+
+
+		/* profile navigation */
+		.clem{
+		text-align:center;
+		padding-bottom: 10px;
+			} 
+
+		.clem h6{
+		font-family: Montserrat, Sans-Serif;
+		font-weigt:100;
+		font-color: #ffffff;
+		text-transform: uppercase;
+		font-size: 12px;
+		text-decoration:none;
+		border-radius: 20px;
+	    background:#0076e1;
+	    padding-top:5px;
+	    padding-bottom:5px;
+	    margin-left: 40px;
+	    margin-right:40px;
+	    } 
+
+
+
+/* Bouton */
+
+.button{
+	text-align:center;
+	padding-right:150px;
+} 
+
+.bouton_CV{
+	text-decoration:none;
+	color:  #ffffff;
+	border-radius: 15px;
+	padding:10px;
+	margin:10px;
+    background:#007ced;
+} 
+.bouton_CV:hover{
+	color:  #000000;
+} 
+
+
+.bouton_linkedin{
+	text-decoration:none;
+	color: #545454;
+	margin:10px;
+	padding:10px;
+} 
+
+.bouton_linkedin:hover{
+	color:  #007ced;
+} 
+
+
+/* Inline Block */
+
+.container3{
+	display:flex;
+	flex-direction:row;
+	flex-container:space-around;
+    flex-flow: row wrap;
+} 
+
+
+
+/* Home Section */
+
+
+.profile{
+	margin-top: 40px;
+	padding-bottom:50px;
+	padding-right:150px;
+	text-align:center
+} 
+
+
+
+
+
+
+/* Portfolio Section */
+
+.box2{
+ width:28%;
+ height:300px;
+ border-radius: 40px;
+ margin:20px;
+ box-sizing: border-box;
+} 
+
+
+
+/* Blog Section */
+
+
+.box3{
+ width:28%;
+ height:300px;
+ border-radius: 40px;
+ background:#d3d3d3;
+ margin:20px;
+ box-sizing: border-box;
+ transition:1s;
+} 
+
+.box3:hover{
+	transform:scale(1.2);
+} 
+
+
+/* Contact Section */
+
+.contact-info{
+ width:28%;
+ height:100px;
+ border-radius: 40px;
+ margin:20px;
+ box-sizing: border-box;
+} 
+
+
+		/*Formulaire*/
+
+		.formulaire{
+			padding-top:10px;
+			padding-left:20px;
+		}
+
+		.nom, .email{
+			border-color:white;
+			background:#dcdcdc;
+			padding:10px 208px 10px 10px;
+			border-radius: 10px ;
+			font-family: 'Montserrat', sans-serif;
+
+		}
+
+		.message{
+			background:#dcdcdc;
+			border-color:white;
+			padding:10px 0px 10px 10px;
+			border-radius: 20px ;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.submit{
+			border-color:white;
+			cursor:pointer;
+			border-radius: 8px ;
+		}
+
+
+
+
+
+/*Skills Section*/
+
+.skills-info{
+ width:26%;
+ height:160px;
+ border-radius: 40px;
+ margin:20px;
+
+ box-sizing: border-box;
+} 
+
+.exp{
+	padding:20px;
+}
+
+.exp h3{
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+footer{
+	text-align:center;
+}
+
+
+/*mobile*/
+
+@media screen and (max-width: 850px) {
+  .container{
+ 	width: auto;
+ 	height:auto;
+ 	}
+ 	.content{
+ 	height: 7200px;
+ 	}
+
+ .sidebar{
+ 	display:none;
+ 	}
+
+ .image_clem{
+ 	width:280px;
+ 	height:212px;
+ 	}
+  .profile{
+ 	line-height:1.2;
+ 	}
+  .container3{
+  	flex-wrap: wrap;
+ 	flex-direction: column;
+ 	}
+
+  .skills-info{
+  	width:60%;
+  	margin-top:45px;
+ 	}
+
+ .button{
+ 	display:flex;
+  	flex-wrap: wrap;
+ 	flex-direction: column;
+ 	}
+
+ .box3{
+  	width:60%;
+ 	}
